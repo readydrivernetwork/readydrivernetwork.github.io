@@ -130,9 +130,29 @@ footer h4{font-family:var(--display);color:#fff;text-transform:uppercase;letter-
 .door2 p{color:#D6DEEA}
 .door2 ul{margin:14px 0 20px;padding-left:18px;color:#D6DEEA;font-size:15.5px}
 .door2 ul li{margin:6px 0}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:22px;margin-top:26px}
+.vcard{background:var(--navy);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.vcard.ok{border-color:rgba(53,196,238,.45)}
+.vcard.out,.vcard.shop{opacity:.62}
+.vph{position:relative;aspect-ratio:16/10;background:var(--navy-3)}
+.vph img{width:100%;height:100%;object-fit:cover}
+.vcard.out .vph img,.vcard.shop .vph img{filter:grayscale(1)}
+.vbadge{position:absolute;left:12px;top:12px;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:14px;padding:6px 12px;border-radius:999px}
+.b-ok{background:var(--cyan);color:var(--ink)}
+.b-out{background:var(--orange);color:#fff}
+.b-shop{background:#44546b;color:#fff}
+.vin{padding:18px 20px 22px;display:flex;flex-direction:column;flex:1}
+.vin h3{font-size:23px;margin-bottom:8px}
+.vrate{font-family:var(--display);font-weight:800;font-size:34px;color:var(--cyan);line-height:1}
+.vrate span{font-family:var(--body);font-weight:600;font-size:15px;color:var(--muted);letter-spacing:0}
+.vinc{color:#C3CDDC;font-size:14.5px;margin:10px 0 16px}
+.vnote{color:var(--muted);font-size:14px;margin:10px 0 16px}
+.vcard .btn{margin-top:auto}
+.vlegend{display:flex;flex-wrap:wrap;gap:16px;margin-top:18px;color:var(--muted);font-size:14.5px}
+.vlegend i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px}
 </style><div class="nav"><div class="wrap">
 <a class="brand" href="index.html"><img src="img/logo.png" alt="Ready Driver Network"><span>Ready Driver<b>Network</b></span></a>
-<nav class="links"><a href="book.html">Book a car</a><a href="drivers.html">Drivers</a><a href="partners.html">Car owners</a><a href="companies.html">Companies</a><a href="index.html#faq" class="on">FAQ</a></nav>
+<nav class="links"><a href="book.html">Our cars</a><a href="drivers.html">Drivers</a><a href="partners.html">Car owners</a><a href="companies.html">Companies</a><a href="index.html#faq" class="on">FAQ</a></nav>
 <a class="navphone" href="tel:+17543070967">754-307-0967</a>
 <a class="btn btn-p btn-sm cta" href="book.html">Book a car</a>
 <button class="burger" aria-label="Menu" onclick="document.getElementById('mm').classList.toggle('open')">☰</button>
